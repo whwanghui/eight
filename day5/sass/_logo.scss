@@ -1,0 +1,79 @@
+#logo{
+    position: static;
+    top: -130px;
+    width: 100%;
+    margin: 35px auto;
+}
+.log_l{
+    @extend %left;
+    @extend %clear;
+     li{
+            @extend %left;
+        }
+}
+.log_r{
+    @extend %right;
+    @extend %clear;
+    .log_r_l{
+        @extend %left;
+    }
+    .log_r_r{
+        @extend %left;
+    }
+    .gaoj{
+         @extend %left;
+             margin: 2px 10px 0 10px;
+    line-height: 16px;
+    color: #999;
+    font-size: 14px !important;
+
+    }
+}
+
+.sousuo {
+    width: 584px;
+    height: 38px;
+    border: 2px solid #c30000;
+    p{
+        @extend %left;
+        margin-top: 11px;
+           margin-left: 10px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/index.png) no-repeat -69px -24px;
+    }
+    span{
+        @extend %left;
+    }
+    input[type=text]{
+        width: 450px;
+        height: 36px;
+    margin-left: 6px;
+        font: 14px/36px ;
+        color: #bbb;
+        border: none;
+        outline: none;
+        
+    }
+    input[type=button]{
+        outline: none;
+    width: 102px;
+    height: 38px;
+
+    font: 18px;
+    color: #fff;
+    background-color: #c30000;
+    border: none;
+    }
+   
+}
+.sousuox{
+    height: 18px;
+    padding-top: 8px;
+    overflow: hidden;
+    a{
+        margin-right: 18px;
+    color: #757575;
+    }
+}

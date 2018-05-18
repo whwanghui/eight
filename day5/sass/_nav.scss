@@ -1,0 +1,325 @@
+.nav_l_head{
+     width: 210px;
+    height: 46px;
+    line-height: 46px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    background-color: #2d8800;
+    @extend %left;
+}
+#nav{
+      position: relative;
+    height: 46px;
+    border-bottom: 2px solid #318700;
+    z-index: 999;  
+}
+.nav_c{
+    @extend %left;
+    
+    ul li{ 
+        @extend %left;
+        a{
+        display: inline-block;
+        height: 38px;
+        margin: 5px 0 3px 0px;
+        padding: 0 11px;
+        font: 16px/38px "Microsoft YaHei";
+        text-align: center;
+        color: #383838;
+    }
+    }
+    
+}
+.nav_c ul li a:hover{
+    text-decoration: none;
+    color: #8cb91e;
+    
+}
+.subnav>li>p{
+    padding: 0 19px 0 19px;
+    height: 39px;
+}
+.subnav{
+    position: absolute;
+//  display: none;
+    top: 48px;
+    width: 210px;
+    height: 410px;
+    padding: 12px 0 28px 0;
+    background-color: #3ea600;
+    li{
+       p{
+            
+            b{
+                display: block;
+                float: left;
+                width: 18px;
+                height: 18px;
+                margin: 6px 16px 0 0;
+                background-position: 0 0;
+                  background-image: url(http://pic3.womai.com/upload/backend/2018/02/24/16/1519460866192.png);
+            }
+        a{
+            width: 172px;
+        height: 32px;
+        margin-right: 2px;
+        line-height: 32px;
+        font-size: 14px;
+        overflow: hidden;
+        color: #fff;
+        }
+        }
+        
+        
+       
+    }
+    
+    li:nth-of-type(2) p{
+            b{
+               background-image: url(http://pic1.womai.com/upload/backend/2018/02/24/14/1519454064424.png);
+            }
+        }   
+     li:nth-of-type(3) p{
+            b{
+             background-image: url(http://pic3.womai.com/upload/backend/2018/02/24/14/1519454070045.png);
+
+            }
+        }
+        li:nth-of-type(4) p{
+            b{
+             background-image: url(http://pic2.womai.com/upload/backend/2018/02/24/14/1519454078081.png);
+
+            }
+        }
+        li:nth-of-type(5) p{
+            b{
+             background-image: url(http://pic2.womai.com/upload/backend/2018/02/24/14/1519454085254.png);
+
+            }
+        }
+        
+        li:nth-of-type(6) p{
+            b{
+             background-image: url(http://pic2.womai.com/upload/backend/2018/02/24/14/1519454094998.png);
+
+            }
+        }
+        
+        li:nth-of-type(7) p{
+            b{
+             background-image: url(http://pic2.womai.com/upload/backend/2018/02/24/14/1519454101442.png);
+
+            }
+        }
+        li:nth-of-type(8) p{
+            b{
+             background-image: url(http://pic3.womai.com/upload/backend/2018/02/24/14/1519454107158.png);
+
+            }
+        }
+        
+        
+        li:nth-of-type(9) p{
+            b{
+             background-image: url(http://pic1.womai.com/upload/backend/2018/02/24/14/1519454111926.png);
+
+            }
+        }
+        li:nth-of-type(10) p{
+            b{
+             background-image: url(http://pic2.womai.com/upload/backend/2018/02/24/14/1519454116904.png);
+
+            }
+        }
+        li:nth-of-type(11) p{
+            b{
+             background-image: url(http://pic1.womai.com/upload/backend/2018/02/24/16/1519460922080.png);
+
+            }
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+.subnav li p:hover{
+    background-color: #fff;
+    a{
+        color: #3ea600;
+    }
+    b{
+        background-position: -18px 0;
+    }
+}
+.nav_r{
+    @extend %right;
+    position: relative;
+}
+.nav_r_btn{
+        display: inline;
+    position: absolute;
+    top: -3px;
+    right: 0px;
+    width: 180px;
+    height: 18px;
+    padding: 9px 10px 16px;
+    margin: 5px 1px 1px;
+    line-height: 22px;
+    text-align: center;
+    color: #098A00;
+    cursor: pointer;
+    @extend %clear;
+    li{
+    @extend %left;
+    margin-left:15px;
+    }
+}
+.nav_r_btn_l{
+    @extend %left;
+    margin-left:55px;
+    display: inline-block;
+    width: 27px;
+    height: 20px;
+    vertical-align: middle;
+    background: url(../images/index.png) no-repeat -47px 0;
+    i{
+        position: absolute;
+    left: 76px;
+    top: -8px;
+    width: 25px;
+    height: 20px;
+    font: 12px/16px;
+    background: url(../images/index.png) no-repeat -10px -40px;
+    text-align: center;
+    font-style: normal;
+    color: #fff;
+    overflow: hidden;
+    }
+}
+
+.nav_r_btn_r{
+    @extend %right;
+    width: 10px;
+    height: 6px;
+        margin: 10px 18px 0 5px;
+    background: url(../images/index.png) no-repeat 0 -40px;
+    overflow: hidden;
+}
+#nav .wrapper{
+    position: relative;
+}
+.tab{
+    position: absolute;
+    top: 43px;
+    right: 0;
+    width: 203px;
+    height: 450px;
+    margin-top: 5px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+.tabbtn > ul{ 
+    @extend %clear;
+    li{
+    @extend %left;
+           width: 65.5px;
+    height: 29px;
+    padding:0 1px;
+    line-height: 29px;
+    color: #3c3c3c;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    background-color: #F7F7F7;
+    cursor: pointer;
+   
+}}
+.tabbtn>ul>li.active{
+
+    color: #0D8700;
+    border-bottom: 2px solid #2d8800;
+    background-color: #fff;
+
+}
+.tabneir{
+    display:none;
+        padding: 6px 16px;
+        height: 75px;
+}
+.tabdot{
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    margin: 0 8px 8px;
+    background-color: #4d4d4d;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+.tab_img{
+        border-top: 1px solid #ddd;
+        display: block;
+}
+.tab_img ul li{
+    @extend %left;
+    width: 66.6px;
+    height: 60px;
+    border-bottom: 1px dotted #ddd;
+    border-right: 1px dotted #ddd;
+    overflow: hidden;
+    text-align: center;
+}
+.nav_r:hover{
+    .nav_r_btn{
+             top: 1px;
+    z-index: 105;
+    height: 22px;
+    margin: 0;
+    border: 1px solid #3a9901;
+    border-bottom: none;
+    background-color: #fff;
+     }
+    .nav_r_subnav{
+        display: block;
+    }
+}
+.nav_r_subnav{
+    display: none;
+    position: absolute;
+    top: 48px;
+    right: 0px;
+    z-index: 104;
+    width: 343px;
+    padding: 15px 0px 8px 15px;
+    background-color: #fff;
+    border: 1px solid #3a9901;
+    overflow: hidden;
+}
+.nav_r_subnav .free {
+    line-height: 20px;
+    text-align: center;
+    span{
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+.nav_r_subnav .free span {
+    display: inline-block;
+    width: 100%;
+    height: 46px;
+    margin-bottom: 6px;
+    background: url(../images/cart-no.jpg) no-repeat center;
+}

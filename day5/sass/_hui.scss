@@ -1,0 +1,133 @@
+.wm-toolbar {
+    position: fixed;
+    top: 0;
+    z-index: 9999999;
+    right: -276px;
+    width: 310px;
+    color: #fff;
+}
+.toolbar-left {
+    position: relative;
+    _position: absolute;
+    left: 0;
+    float: left;
+    width: 34px;
+    background: #000;
+    .wm-toolbar-top {
+        position: absolute;
+        left: 0;
+        width: 34px;
+        height: 216px;
+            font: 12px/1.2 "Microsoft YaHei";
+           .wm-toolbar-hd {
+    width: 18px;
+    height: 88px;
+    padding: 10px 8px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+        .wm-toolbar-footer {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    .wm-toolbar-footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+.pop-up {
+    position: absolute;
+    left: 34px;
+    width: 276px;
+    height: 100%;
+    background: #e6e6e6;
+    overflow: hidden;
+}
+
+.wm-toolbar-hd em {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../images/cart.jpg) no-repeat;
+}
+.cart em {
+    background-position: -178px -8px;
+}
+.cart span {
+    display: inline-block;
+    height: 16px;
+    margin: 8px auto 0;
+    padding: 0 3px;
+    line-height: 16px;
+    border-radius: 3px;
+    background: #3da700;
+    color: #fff;
+}
+.wm-toolbar{
+    @extend %clear;
+}
+.wm-toolbar-footer li {
+    position: relative;
+    height: 34px;
+    width: 34px;
+    margin-top: 6px;
+    line-height: 34px;
+    cursor: pointer;
+}
+.wm-toolbar-footer li em {
+    display: inline-block;
+    background: url(../images/cart.jpg) no-repeat;
+}
+.wm-toolbar-footer li em {
+    height: 34px;
+    width: 34px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.wm-toolbar-footer li span {
+    position: absolute;
+    right: 34px;
+    height: 34px;
+    width: 58px;
+    padding-left: 12px;
+    line-height: 34px;
+    background: #3da700;
+    display: none;
+    overflow: hidden;
+}
+.wm-toolbar-footer li em.accoun {
+    background-position: -34px 0;
+}
+.wm-toolbar-footer li em.recharge {
+    background-position: -68px 0;
+}
+.wm-toolbar-footer li em.qr {
+    background-position: -102px 0;
+}
+.wm-toolbar-footer li em.go-top {
+    background-position: -136px 0;
+}
+.wm-toolbar-footer li:hover span {
+    display: block;
+}
+.wm-toolbar-footer li a {
+    color: #fff !important;
+}
+.wm-toolbar-footer li.qr-img span, .wm-toolbar-footer li.qr-img span img {
+    width: 100px;
+    height: 100px;
+}
+li.qr-img span img {
+    width: 100px;
+    height: 100px;
+}
+.wm-toolbar-footer .qr-img:hover span {
+    bottom: -20px;
+    right: 30px;
+    padding: 75px 29px 97px 25px;
+    background: url(../images/2weimaborder.png) no-repeat;
+}

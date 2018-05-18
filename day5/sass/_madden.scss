@@ -1,0 +1,32 @@
+.commend-pro ul li{
+    @extend %left;
+}
+.commend-pro .firstBig{
+    width: 484px;
+    height: 320px;
+    overflow: hidden;
+    }
+    .commend-pro li{
+        width: 242px;
+        height: 320px;
+        overflow: hidden;
+        img{
+            transition: all 0.5s;
+        }
+    }
+    
+.commend-pro li:hover{
+    img{
+        margin-left: -10px;
+    }
+}
+.floor-adv {
+    margin-top: 30px;
+    overflow: hidden;
+}
+.floor-adv li {
+    @extend %left;
+    width: 403px;
+    height: 110px;
+    overflow: hidden;
+}

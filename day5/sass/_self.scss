@@ -1,0 +1,30 @@
+.float-nav{background:url(http://pic.womai.com/pic/sale/2018/selfimages/0502/floatbk-0502.png)no-repeat top center;padding-top:85px;width:191px;margin-left:-740px;}
+.float-nav ul{background:none;padding-left:56px;}
+.float-nav ul li{width:74px;height:35px;border-bottom:none;}
+.float-nav ul li a, .float-nav ul li span, .float-nav ul li b{width:80px;padding:0;}
+.float-nav ul li b{padding:5px 0 0 0;color:#fff;height:26px;}
+.float-nav ul li a:hover, .float-nav ul li.hover a:hover, .float-nav ul li.hover a:hover b, .float-nav ul li.curr{background:#cd2423}
+.selfactive{width:100%;margin:0px;}
+#chj_zdy{width:100%;height:763px;background:url(http://pic.womai.com/pic/sale/2018/selfimages/0502/selfbk-0425.png) center no-repeat;}
+#chj_zdy img{float:left;}
+#chj_zdy a:hover img {-moz-opacity: 0.8; opacity: .80; filter: alpha(opacity=80);}
+.selfMainPart{width:1210px;height:547px;padding-top:190px;margin-left:-605px;left:50%;display:block;position:absolute;}
+.selftLeftAdPart{height:547px;float:left;}
+.selfRightAdPart{float:left;padding-left:5px;}
+.f5list a{
+    display: block;
+    width: 196px;
+    height: 196px;
+    margin-bottom: 20px;
+    float: left;
+}
+.f5list img{padding:3px;}
+.f3list img{padding:2px;}
+body.thousand .selfactive{width:100%;}
+body.thousand #chj_zdy{height:663px;background:url(http://pic.womai.com/pic/sale/2018/selfimages/0502/selfbk-0425.png) center no-repeat}
+.thousand .selftLeftAdPart {height: 446px;width: 182px;}
+body.thousand .selfMainPart{width:1000px;height:454px;padding-top:175px;margin-left:-496px;left:50%;display:block;position:absolute}
+body.thousand .selftLeftADPart img{width:185px;}
+body.thousand .f5list img{width:158px;padding:2px;}
+body.thousand .f3list img{padding:1px;width:268px;}
+body.thousand .selfProPart img{width:247px;}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登入页</title>
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+		<script src="../js/require.js" defer async="true" data-main="../js/main.js"></script>
+	</head>
+	<body>
+		
+		
+		
+		<div id="alertLayoutBg" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 750px; opacity: 0.5; background-color: rgb(0, 0, 0); z-index: 1000;display: none;">
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		<div class="login_content" style="position: relative;">
+			<div class="header">
+				<div class="header_logo">
+					<a href="../index.html">
+					<img data-order="100" src="https://passport.womai.com/upload/2018/4/25/2018042510164955.png" width="210" height="80" alt="返回首页" border="0">
+					</a>
+				</div>
+				
+				<div class="header_line">
+					
+				</div>
+				<div class="clear">
+					
+				</div>
+			</div>
+			
+					<!--报错-->
+				<div class="alert-popup" id="j-alert-popup999999" style="z-index: 999999; left: 437px;">
+					<i id="j-alert-close999999" data-zindex="999999">×</i>
+					<div class="alert-top png"></div>
+					<div class="alert-content">
+						<h3>提示</h3>
+						<div class="alert-popup-con">
+							<p>对不起，您的账号或密码输入错误，请重新输入！</p></div><div class="alert-pop-btn2 alert-pop-btn">
+							<a href="javascript:;" class="alert-confirm" id="j-alert-confirm999999" data-zindex="999999">确定</a></div></div><div class="alert-bottom2 png">
+								
+							</div>
+				</div>
+			
+			
+			<div class="main">
+				<div class="main_bg">
+	    			<img data-order="101" src="https://passport.womai.com/upload/2018/5/15/20180515100026744.jpg" width="1000" height="500" alt="" border="0">
+				</div>
+				<div class="main_content loginmain_cont">
+					<div class="mc_outside">
+						<div class="mc_inside">
+							<div class="mci_title">请登录中粮我买网</div>
+							<div class="mci_content">
+								<form method="post" onsubmit="return false;">
+									<div class="mcicont_input  parentCls">
+										<input id="username" name="username" type="text" class="cont_input long_input inputElem" tabindex="1" value="" data-html="" placeholder="用户名">
+										
+										<div class="mcicont_line">
+											<div class="mciline_aright">
+												<a href="#">忘记登录密码？</a>
+											</div>
+											<div class="clear">
+											
+										</div></div>
+										
+									</div>
+									<div class="mcicont_input">
+										<input id="password" name="password" type="password" class="cont_input long_input" tabindex="2" placeholder="密码">
+										
+										<div class="mcicont_line" id="changeCode" style="display: none;">
+											<div class="mciline_aright">
+												<a href="#">看不清 换一张</a>
+											</div>
+											<div class="clear"></div>
+										</div>
+										<div class="input_error" style="display: block;">
+											
+										</div>
+										
+									</div>
+									
+									<div class="mcicont_btn">
+										<input id="btn" type="submit" class="mcibtn_aleft" value="登&nbsp;录" name="submit">
+										
+										<a class="mcibtn_aright" href="register.html">注&nbsp;册</a>
+										<div class="clear"></div>
+									</div>
+									
+									
+									<div class="mci_account">
+										<div class="mcia_title">使用合作伙伴账号登录我买网</div>
+										<ul class="mcia_con">
+										<li class="qq_li"><i></i><a href="#;">QQ</a></li>
+										<li class="renren_li"><i></i><a href="#');">人人网</a></li>
+										<li class="kaixin_li"><i></i><a href="#');">开心网</a></li>
+										<li class="spe_li alipay_li"><i></i><a href="#">支付宝</a></li>
+										<li class="spe_li sinawb_li"><i></i><a href="javascript:otherlogin('','95','http://sh.womai.com/');">新浪微博</a></li>
+										<li class="spe_li baidu_li"><i></i><a href="#">百度</a></li>
+										<li class="spe_li ccb_li last_li"><i></i><a href="#">建行</a></li>
+										<li class="spe_li zhidemai"><i></i><a href="#">什么值得买</a></li>
+										<li class="spe_li zhongying"><i></i><a href="#">中英人寿</a>
+											
+										</li>
+										</ul>
+									</div>
+									
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear">
+				
+			</div>
+			<div id="bg_layer" style="height:650px;width:100%;position:absolute;top:0;left:0;background-color:#666;filter:alpha(opacity=25);-moz-opacity: 0.75;opacity: 0.90;z-index:100;display:none;" onclick="hideNote();">
+				
+			</div>
+		</div>
+		<ul id="footer" class="ac">
+			<li class="w s2">Copyright©2009-2018  womai.com.hk All Rights Reserved 中粮海优（北京）有限公司版权所有<br>中粮海优（北京）有限公司 北京市朝阳区朝阳门南大街8号18F-09室<br>
+			<div class="beian">
+			<a href="#">
+				
+				<img style="float: left;position: relative;width: 20px;height: 20px;background: url(../images/bottomicon.png) -114px 0px no-repeat;">
+				<p>京公网安备 11010102000458号</p>
+			</a>
+		</div>
+		<span>京ICP备 13003995号 营业执照（统一社会信用代码）91110000055590239L 食品经营许可证（社会信用代码）05559023-9</span>
+			</li>
+			<li class="s4"></li>
+		</ul>
+		<div id="popvalicode-box" style="left: 222px;">
+		<div id="valicode" style="display: none;">
+			
+			<input class="answer" value="请输入答案">
+			<div class="buttons"><button type="button" class="submit">
+				
+			</button>
+			<button type="button" class="cancel">
+				
+			</button>
+			</div>
+		</div>
+	</div>
+	
+
+</body>
+</html>

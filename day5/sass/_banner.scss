@@ -1,0 +1,58 @@
+#banner >div{
+    width: 100%;
+    height: 450px;
+        background: url(http://pic.womai.com/pic/sale/2018/selfimages/0502/selfrollbk-0502.png) center top no-repeat;
+    img{
+     width: 800px;
+    height: 450px;    
+   margin: 0 auto;
+    }
+}
+.banner_c{
+    position: relative;
+    width: 800px;
+    height: 450px;    
+   margin: 0 auto;
+   overflow: hidden;
+}
+
+.banner_c ol{
+    position: absolute; 
+    top: 400px;
+    left: 50%;
+    width: 310px;
+    margin-left: -155px;
+    li{
+        
+        border-radius: 50%;
+    float: left;
+    width: 21px;
+    height: 21px;
+    margin: 0 5px;
+    background: #fff;
+    cursor: pointer;
+    }
+}
+.banner_c ol li.active{
+    background: #3ea600;
+}
+.banner_c > a{
+    position: absolute;
+    visibility: hidden;
+    top: 50%;
+    margin-top: -31px;
+    width: 28px;
+    height: 62px;
+    font: 400 22px/62px simsun;
+    color: #fff;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    text-decoration: none;
+    pointer-events: auto;
+}
+.left{
+    left: 0px;
+}
+.right{
+    right: 0px;
+}

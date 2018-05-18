@@ -1,0 +1,8 @@
+$advertisingimgw:100%;//最头部广告
+$advertisingimgh:100%;
+.advertising{
+    img{
+        width: $advertisingimgw;
+        height: $advertisingimgh;
+    }
+}

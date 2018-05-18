@@ -1,0 +1,138 @@
+ .floor-l .con {
+    background: #a1c0f6;
+}
+#classify{
+    margin-top: 14px;
+    overflow: hidden;
+}
+.floor-l h3 { 
+        position: relative; height: 38px; padding-left: 15px; font-weight: normal; font-size: 20px; line-height: 38px;} 
+        .floor-l h3 i { display:block;position: absolute; left: 0; top: 8px; width: 5px; height: 20px;background-color: #88A9E2;} 
+        .floor-l h3 {
+    color: #88A9E2; } 
+    .floor-l .con { position: relative; padding-top: 50px;}
+    .floor-l .con span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 56px;
+    height: 20px;
+    padding: 10px 0 34px 8px;
+    line-height: 20px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    background: url(../images/floor_icon.png) no-repeat;
+    cursor: pointer;
+}
+.floor-l ul {
+    width: 200px;
+    height: 110px;
+    padding-bottom: 9px;
+    margin-left: 21px;
+    border-bottom: #000 1px solid;
+}
+.floor-l li{ position: relative; float: left; width: 75px; height: 36px; padding-left: 25px; font-size: 14px; line-height: 36px; overflow: hidden;}
+.floor-l li i { position: absolute; top: 7px; left: 0; display: inline-block; width: 22px; height: 22px; }
+.pic:hover .aImg{
+        left:242px;
+}
+.floor-l li a:hover{
+    color: #1d232d;
+}
+.floor-r{
+    display: block;
+    width: 968px;
+}
+.floor-r .tit{ display: block;height: 36px; margin: 0 0 2px 30px; font-size: 16px; line-height: 36px; color: #434343; @extend %clear}
+.floor-r .tit li{ height: 36px; margin-right: 30px; padding: 0 5px; text-align: center; color: #383838; overflow: hidden;@extend %left;}
+
+.floor-r .con {
+    border-top: 1px solid #a1c0f6;
+     position: relative;
+    width: 968px;
+    display: none;
+}
+.floor-r div.con_l{
+    display: block
+}
+.floor-r .con .clearfix { overflow: auto;@extend %clear;}
+.floor-r .tit .cur {
+    border-bottom: 2px solid #a1c0f6;
+    color: #434343;
+}
+.floor-r .con li{ width: 241px; height: 250px; border-bottom: 1px solid #ededed; border-right: 1px solid #ededed; overflow: hidden;@extend %left;}
+.floor-r .con dt img { position: relative; left: 0; width: 180px; height: 180px;margin:0 auto; margin-top: 6px; }
+.floor-r .con li img{
+    transition: all 0.8s;
+}
+.floor-r .con li img:hover{
+    left: 20px;
+}
+.floor-r .name { width: 200px;margin-left: 20px;height: 24px; font-size: 14px; line-height: 24px; color: #383838;overflow: hidden;}
+.floor-r .price {
+    > span{
+        
+        span{
+            font-size: 20px;
+        }
+        margin-left: 20px; 
+    }
+   
+    height: 26px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #dd0800;
+}
+.floor-r .first {
+    margin-right: 484px;
+}
+.floor-r .adv {
+    position: absolute;
+    top: 0;
+    left: 242px;
+    width: 482px;
+    height: 250px;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    overflow: hidden;
+}
+.floor-r .adv ul { position: absolute;}
+ .floor-r .adv ul li {
+    float: left;
+    width: 483px;
+    height: 250px;
+    overflow: hidden;
+}
+ .floor-r .adv > a{
+    position: absolute;
+    top: 50%;
+    margin-top: -38px;
+    visibility: hidden;
+    color: #fff;
+    font-size: 50px;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+    text-decoration: none;
+}
+.adv_left{
+    left: 0;
+}
+.adv_right{
+    right: 0;
+}
+.slider-num{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -31px;
+    z-index: 2;
+    height: 21px;
+    text-align: center;
+}
+.floor-r .adv ol li{ float: left; width: 21px;height: 21px; margin: 0 5px;background-color: #fff;border-radius: 50% ;cursor: pointer;}
+.floor-r .adv ol .hover{
+    background: #3EA600;
+}
+

@@ -1,0 +1,284 @@
+.p-infor .p-zy {
+    float: left;
+    padding: 0px 3px;
+    margin: 2px 4px 2px 0px;
+    color: #fff;
+    background-color: #c20312;
+    border-radius: 2px;
+}
+.p-infor .choose-box dl dt,.p-infor .choose-box dl dd, .p-infor .merge dl dt, .p-infor .merge dl dd {
+    float: left;
+    margin: 8px 0;
+    line-height: 30px;
+}
+.p-infor .p-title {
+    width: 506px;
+    height: auto;
+    margin: 5px 0;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.p-infor .price-wrap {
+    height: 36px;
+    padding-left: 16px;
+    padding-top: 20px;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+.p-infor .price-wrap .price-infor {
+    height: 26px;
+    overflow: hidden;
+}
+.p-infor .price-wrap .price-infor .price em {
+    font-style: normal;
+    font-size: 15px;
+}
+.price-infor .price {
+    display: inline-block;
+    height: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 26px;
+    color: #c40000;
+}
+.price-infor .group {
+    display: inline-block;
+    height: 18px;
+    margin: 6px 10px 0px 10px;
+    padding: 0 5px;
+    line-height: 18px;
+    background: #c40000;
+    color: #fff;
+}
+.p-infor .promotions .pro_m_line {
+    margin-top: 6px;
+}
+
+.pro_m_line {
+    width: 500px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+.pro_m_line dl{
+    @extend %clear;
+}
+.pro_m_line dt {
+    height: 20px;
+    line-height: 21px;
+    padding: 0 5px;
+    text-align: center;
+    color: #fff;
+    background: #c40000 none repeat scroll 0 0;
+}
+.pro_m_line dt, .pro_m_line dd {
+    float: left;
+}
+.pro_m_line dd.intro {
+    margin: 0 15px 0 5px;
+}
+.p-infor .promotions {
+    position: relative;
+    padding: 13px 0 10px 16px;
+    background: #f5f5f5;
+    display: block;
+}
+.pro_m_line dd.man_detail {
+    position: relative;
+    margin-top: 2px;
+    padding-left: 10px;
+}
+.pro_m_line dd.man_detail .png {
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    background: url(../images/newDetail_btn.png) no-repeat -122px 0;
+}
+.p-infor .promotions .more {
+    position: absolute;
+    top: 30px;
+    right: 14px;
+    width: 74px;
+    height: 18px;
+    color: #383838;
+    line-height: 18px;
+    cursor: pointer;
+    display: block;
+    a{
+            line-height: 18px;
+    }
+}
+.pro_m_line dd.man_detail a {
+    color: #c40000;
+    cursor: pointer;
+    margin-left: 6px;
+}
+.p-infor .promotions .more i {
+    display: inline-block;
+    width: 9px;
+    height: 5px;
+    background: url(../images/details.png) no-repeat -92px -26px;
+    overflow: hidden;
+}
+.p-infor .address {
+    line-height: 34px;
+    padding-left: 16px;
+    @extend %clear;
+}
+.p-infor .address dt {
+    width: 42px;
+}
+.p-infor .address dt,.p-infor .address dd {
+    float: left;
+    height: 34px;
+}
+.addr_select {
+    position: relative;
+    z-index: 99;
+}
+.addr_select .text {
+    position: relative;
+    z-index: 101;
+    width: auto;
+    height: 24px;
+    margin-top: 6px;
+    margin-right: 10px;
+    padding: 0 17px 0 5px;
+    line-height: 24px;
+    background: #fff;
+    border: 1px solid #cacaca;
+}
+.addr_select .region-text {
+
+    height: 22px;
+    overflow: hidden;
+}
+.addr_select s {
+    position: absolute;
+    top: 10px;
+    right: 3px;
+    display: block;
+    width:0px;
+    height: 0px;
+    border-left: 3px solid transparent; 
+    border-right: 3px solid transparent; 
+    border-top: 6px solid #ccc; 
+}
+.p-infor .merge {
+    border: none;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.p-infor .choose-box, .p-infor .merge {
+    padding-left: 16px;
+    margin-top: 5px;
+}
+.choose dl dt{
+    width: 44px;
+}
+.p-infor .choose-box .choose, .p-infor .merge .choose {
+    overflow: hidden;
+}
+.p-infor .merge dl dd {
+    float: left;
+    margin: 8px 0;
+    line-height: 30px;
+}
+.p-infor .choose-box dd, .p-infor .merge dd {
+    width: 480px;
+    overflow: hidden;
+}
+.p-infor .merge dd .choose-amount {
+    display: inline-block;
+    width: 73px;
+    height: 28px;
+    margin-right: 8px;
+    border: 1px solid #dcdcdc;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.merge dd .choose-amount > span {
+    width: 13px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+.merge dd .choose-amount .input_plus{
+    width: 13px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+.fl {
+    float: left;
+}
+.p-infor .choose-box dd .choose-amount .proinput, .p-infor .merge dd .choose-amount .proinput {
+    width: 45px;
+    height: 28px;
+    padding: 0;
+    line-height: 28px;
+    text-align: center;
+    border: none;
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+}
+.p-infor .btn-box {
+    position: relative;
+    padding-top: 15px;
+    margin-left: 16px;
+}
+.p-infor .btn-box .buyBtn {
+    width: 194px;
+    height: 24px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.p-infor .btn-box .b-red {
+    background: #c40000;
+    margin-left: -16px;
+}
+.p-infor .btn-box .coupon-phone {
+    text-align: center;
+    font-size: 16px;
+    width: 170px;
+    height: 24px;
+    padding: 10px 8px;
+    border: 1px solid #c40000;
+    overflow: hidden;
+}
+.p-infor .btn-box .coupon-phone b {
+    background: url(../images/mqr.png);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+.p-infor .btn-box ul li {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.p-infor .btn-box .buyBtn b {
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    margin-right: 6px;
+    background: url(../images/details.png) no-repeat;
+    vertical-align: middle;
+}

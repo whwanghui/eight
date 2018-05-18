@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="../css/cart.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/normalize.css"/>
+		<script src="../js/require.js" defer async="true" data-main="../js/main.js"></script>
+	</head>
+	<body>
+		<!--
+        	描述：头部
+        -->
+		
+		<header>
+			<div id="header">
+				<div class="wrapper">
+					<div class="headeraddress">
+						<ul>
+							<li class="head_zl">
+								<span>当前城市：</span>
+								<a href="#">杭州<i></i></a>
+							</li>
+						</ul>
+					</div>
+					
+					
+					<div class="headnav_l">
+						<ul>
+							<li>
+								hi，欢迎来我买网!
+							</li>
+							<li>
+								<a href="html/login.html" target="_blank">登入</a>
+							</li>
+							<li>
+								<a href="html/register.html" target="_blank">注册</a>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="headnav_r">
+						<ul>
+							<li class="xl"><a href="#">我的账户<i></i></a>
+								<div class="headsubnav1">
+									<ul>
+										<p></p>
+										<p>
+											<b>你还没有登入</b>
+											<a href="html/login.html">登入</a>
+										</p>
+										<li><a href="#">待付款订单 </a></li>
+										<li><a href="#">我的消息 </a></li>
+										<li><a href="#">待签收订单 </a></li>
+										<li><a href="#">我的订单</a></li>
+										<li><a href="#">支付卡账户 </a></li>
+										<li><a href="#">我的积分</a></li>
+										<li><a href="#">优惠券/团购卡</a></li>
+										<li><a href="#">我的收藏</a></li>
+										<li><a href="#">电子礼品卡 </a></li>
+										<li><a href="#">兑 换 券</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#"><b></b>购物车<em class="navnum">0</em>件</a></li>
+							<li class="nav_line"></li>
+							<li class="xl"><a href="#">客户服务<i></i></a>
+								<div class="headsubnav2">
+									<ul>
+									
+										<li><a href="#">帮助中心</a></li>
+										<li><a href="#">新手上路</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav_line"></li>
+							<li><a href="#">大客户</a></li>
+							<li class="nav_line"></li>
+							<li>
+								<span></span>
+								<span></span>
+								<span></span>
+							</li>
+							
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</header>
+		
+		
+		
+		<!--
+        	描述：logo
+        -->
+        
+        
+		<section id="cartlo">
+			<div class="wrapper">
+				<div class="cartlogo">
+					<a href="../index.html" target="_blank"><img src="../images/1524622484074.png"/></a>
+				</div>
+				<div class="cartgif">
+					<ul>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		
+		
+		<!--
+        	描述：mycart
+        -->
+		
+		<section id="mycart">
+			<div class="wrapper">
+				<div class="mycart_l">
+					<div class="trip_content">
+						<span class="tc_left">我的购物车</span>
+					</div>
+					<dl class="address delivery-tip">
+						<dt>送至：</dt>
+						<input type="hidden" id="productid" value="531671">
+						<input type="hidden" id="mid" value="100">
+						<dd class="addr_select">
+							<div class="text">
+								<div class="region-text">
+									浙江省杭州市上城区
+								</div>
+								<s></s>
+							</div>
+							
+						</dd>
+					</dl>
+				</div>
+				<div class="mycart_r">
+					<a href="../index.html" class="fr">继续购物&gt;</a>
+				</div>
+			</div>
+		</section>
+		
+		
+		<!--
+        	描述：waybill货单
+        -->
+		<section id="waybill">
+			<div class="wrapper">
+				<ul class="cartway">
+					<li>
+						<span>
+							我买网发货单
+							<em class="cartnum"></em>
+						</span>
+					</li>
+				</ul>
+				<ul class="waymoney">
+					<span>
+						已选商品(含预估运费)：
+						<em>￥</em><em class="cartmoney">0.0</em>
+					</span>
+					<a href="#">去结算</a>
+				</ul>
+			</div>
+		</section>
+		
+		
+		
+		<!---没有cookie时--->
+		<section>
+			<div class="wrapper empty-cart">
+	            <div class="empty-cart-msg">
+	               	 购物车空空的哦~，去看看心仪的商品吧~<br />
+	                <a href="../index.html">去购物></a>
+	            </div>
+	        </div>
+		</section>
+		
+		<!--
+        	描述：加入购物车物品详情
+        	particulars
+        -->
+		
+		<section id="particulars">
+			<div class="wrapper">
+				<div class="particulars_t">
+					<ul>
+						<div class="cart-col t-checkbox">
+                            <div class="cart-checkbox">
+                                <input type="checkbox" checked="" class="allsel" /> 全选
+                            </div>
+                        </div>
+						<li class="part_first">商品</li>
+						<li>单价</li>
+						<li>数量</li>
+						<li>小计</li>
+						<li>操作</li>
+					</ul>
+				</div>
+				
+				<div id="particulars_c" class="cart">
+					<div class="item-list">
+						<div class="item-head">
+	                        <div class="header-left">
+	                            <a class="header-left-p1" href="">
+	                                <span>
+											换购
+										<b></b>
+									</span> 活动商品已购满999.00元，可加价换购商品10件&gt;
+	                            </a>
+	                            <a class="header-left-p2" href="">换购商品</a>
+	                            <a href="">去凑单 &gt;</a>
+	                        </div>
+	                        <div class="header-price">
+	                            <b></b>
+	                        </div>
+	                    </div>
+	                </div>
+	                
+	                
+	                <!--
+                    	描述：购物车
+                    -->
+					
+		            <div class="content_type content_type1 content_type_zp" style="display: none;">
+					
+						<div class="ct1 contype1_cont1 ct_zp contype1_cont1_h">
+							<div>
+		                  	  <input id="sel531671" type="checkbox" class="fl" name="content-check1" checked="checked" issel="1">
+		                    
+								<a target="_blank" href="#" class="img_a">
+									<img src="http://pic3.womai.com/upload/601/603/606/6300/6305/6315/531671/531671_1_pic60_3763.jpg">
+								</a>
+								<div class="contype1_cont1_cent fl">
+									<a target="_blank" href="#" class="content1_a" title=" 【爆款】G7中原3合1速溶咖啡1600g(越南进口 袋)">
+										
+										 【爆款】G7中原3合1速溶咖啡1600g(越南进口 袋)
+										
+									</a>
+								</div>
+							</div>
+							<div class="clear"></div>	
+						</div>
+						<div class="ct1 contype1_cont2">
+										<b class="jiage">￥</b>
+										<span class="contype1_cont2_p">58.80</span>
+						</div>
+						<div class="ct1 contype1_cont3">
+							<div id="p_dec1_0" class="oper_goods reduce_g">-</div>
+							
+							<div class="input_goods" id="input_goods_1_0_531671">
+								<input class="amount1_0_531671" value="1" class="item_amount">
+							</div>
+							<div id="p_dec_disabled1_0" class="oper_goods plus_g">+</div>
+						</div>
+						<div class="ct1 contype1_cont5">
+							<b>￥</b><span></span>
+						</div>
+						<div class="ct1 contype1_cont6">
+							<div class="fath_div_1">
+								<a href="javascript:void(0);">删除</a>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+
+		             <!--
+                    	描述：购物车结束
+                    -->
+				
+					
+					
+				
+				
+				</div>
+				
+				<!--
+                    	描述：推荐表
+                    -->
+				<div class="tuijian con">
+						<ul>
+							<!--<li>
+								<dl>
+									<dt>
+										<a href="#">
+											<img class="lazyload img" src="http://pic3.womai.com/upload/601/603/606/6300/6305/6315/531671/531671_1_pic270_3763.jpg"></a>
+									</dt>
+									<dd class="name">
+										<a href="#">【爆款】G7中原3合1速溶咖啡1600g(越南进口 袋)
+										</a>
+									</dd>
+									<dd class="price">
+										<span id="commend_buyPrice_531671_5594560541">
+											￥
+											<span class="bold">58.8
+											</span>
+										</span>
+									</dd>
+									<div class="p-btn">
+										<a href="javascript:void(0)">
+											加入购物车
+										</a>
+									</div>
+								</dl>
+							</li>-->
+						</ul>
+					</div>
+				<!--
+                    	描述：算价格
+                    -->
+				<div class="particulars_b">
+					<div class="order_amount">
+						<div class="fl">
+						    <div class="ordercont_edit">
+						        <div class="ordercont_allcheck fl">
+						            <input type="checkbox" id="all_two1" class="checkall" cartids="1" checked="checked">
+					            	<label for="all_two1">全选</label>
+						            <div class="clear"></div>
+						        </div>
+						        <div class="collect fl">
+						        	<a href="#">收藏</a>
+						        </div>
+						        <div class="pos fl">
+						        	<a href="#" id="delSelCartItems1" cartids="1" todel="1" class="delete_all">删除</a>
+									<span class="top_img">
+										
+									</span>
+						        </div>
+						        <div class="clear"></div>
+						    </div>
+						    <div class="oal_img" style="display: none;">
+						    	
+						    </div>
+						    <div class="ordercont-sign">
+						    	<span>
+						    		<a href="#" target="_blank">先充值再买单更优惠 充值1000元送价值59元进口腰果 再用充值所赠1000积分兑换东北大米5KG！</a>
+						    	</span>
+						    </div>
+						
+							<div>
+								<p>&nbsp;</p>
+								<br>
+								<p>&nbsp;</p>
+							</div>
+				   		</div>
+				    
+					<div class="ordam_right">
+							<div class="ordam-item1">
+
+							    <span class="oar_title fl" style="margin-left: 134px;">预估运费：</span>
+							    <span id="j-totaldeliveryrule1" class="oar-money fl">￥0.00</span>
+							    <div class="clear"></div>
+							</div>
+							<div class="ordam-money">
+							  	<span class="oar_title fl">商品金额：</span>
+							    <span class="oar-money fl">￥117.60</span>
+							    <div class="clear"></div>
+							</div>
+							<div class="ordam-money ordam-fav">
+							  	<span class="oar_title fl">促销优惠：</span>
+							    <span class="oar-money fl">－￥0.00</span>
+							    <div class="clear"></div>
+							</div>
+						<div class="ordam-total">
+							<span class="num fl">已选 <em>2</em> 件</span>
+							
+							<span id="j-totaltopay1" class="oar-money-total fl">￥117.60</span>
+							<span class="oar_title-total fl">应付金额：</span>
+							<div class="clear"></div>
+						</div>
+						<div class="btn">
+							<div class="j-phone">
+							   	<div class="phone-hover" style="display: none;">
+
+							   		<span></span>
+							   	</div>
+							   	<span class="phone-hui fl">
+
+							   	</span>
+					   		</div>
+							<a href="#" class="fl topay topay1" data-first="y" topay="1" id="cofcocheck">去结算</a>
+						  	<div class="clear"></div>
+						</div>
+					</div>
+					
+						
+						
+					
+				    
+					<div class="clear"></div>
+				</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		
+		
+		<!--
+        	描述：底部success-footer
+  
+        -->
+		
+		<div class="success-footer w wrapper">
+	<p>
+		</p><div class="beian">
+			<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102000458">
+				
+				<img src="http://static.womai.com/zhongliang/city/common/images/beian.png">
+				<p style="color:#606060;">京公网安备 11010102000458号</p>
+			</a>
+		</div>
+		<span>|</span> 京ICP备 13003995号 <span>|</span> 营业执照（统一社会信用代码）91110000055590239L <span>|</span> 食品经营许可证：JY11105020028185<p></p>
+    <p class="copyright">Copyright©2009-2018  womai.com.hk 版权所有</p>
+</div>
+		
+		
+		
+		
+	</body>
+</html>

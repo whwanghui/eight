@@ -1,0 +1,23 @@
+%left{
+    float: left;
+}
+img{display:block;}
+.wrapper{
+    width: 1210px;
+    margin: 0 auto;
+    @extend %clear;
+}
+%right{
+    float: right;
+}
+%blk{
+    display: block;
+}
+%clear:after{content:"";display:block;height:0;overflow:hidden;visibility:hidden;clear:both;}
+a:hover {
+    color: #8cb91e;
+    text-decoration: underline;
+}
+.wrapper{
+    @extend %clear;
+}
